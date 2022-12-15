@@ -39,7 +39,7 @@ class App extends React.Component {
     changePlayer = (column) => {
         const emptyCells = this.state.emptyCells[column]
 
-        if (!this.state.isGameOver && (emptyCells >= 0) && !this.state.isBoardFull){
+        if (!this.state.isGameOver && (emptyCells >= 0)){
 
             let newBoard = this.state.board
             let newFullCells = this.state.emptyCells
